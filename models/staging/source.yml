@@ -1,12 +1,10 @@
 version: 2
 sources:
     - name: source_db_schema
-      database: "{{('dbt_db')}}"
+      database: "{{('di_db')}}"
       schema: raw_schema
       tables:
         - name: raw_customerdata
-        - name: raw_emp_sal
-        - name: raw_orders
       
 
 
